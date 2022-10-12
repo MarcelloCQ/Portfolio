@@ -65,5 +65,8 @@
     display: flex;
     align-items: center;
     min-height: 100vh;
-    background-image: url();
+    background-image: url("/imagenes/react-galaxia.png");
+    background-position: center;
+    background-size: auto;
+    background-position-x: center;
 }

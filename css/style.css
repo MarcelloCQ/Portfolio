@@ -1,0 +1,72 @@
+.body {
+    background-color: rgb(82, 82, 82);
+    color: rgb(247, 160, 160);
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.nav {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.container {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.elements {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav__logo {
+    display: block;
+    border-radius: 50%;
+    width: 48px;
+    height: 68px;
+    object-fit: cover;
+}
+
+.menu {
+    display: flex;
+    gap: 16px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.menu__link {
+    color:rgb(247, 160, 160);
+    font-weight: 78px;
+    text-decoration: none;
+    transition: 025ms;
+}
+
+.menu__link:hover {
+    color: rgb(153, 91, 211);
+}
+
+.section {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.section--hero {
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url("/imagenes/react-galaxia.png");
+    background-position: center;
+    background-size: auto;
+    background-position-x: center;
+}

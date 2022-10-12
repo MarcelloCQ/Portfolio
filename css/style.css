@@ -55,3 +55,15 @@
 .menu__link:hover {
     color: rgb(153, 91, 211);
 }
+
+.section {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.section--hero {
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url();
+}

@@ -2,48 +2,37 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Marcello Crescimbeni</title>
-  <style>
-    .body {
-      background-color: #646464;
-      flex-direction: column;
-      align-items: center;
-      color: rgb(255, 215, 215);
-      margin: 0 auto;
-      font-family: 'Courier New', Courier, monospace;
-      justify-content: center;
-      display: flex;
-      max-width: 512px;
-      min-height: 100vh;
-      padding: 2rem;
-      box-sizing: border-box;
-    }
-    .link {
-      color: black;
-      background-color: rgb(248, 143, 135);
-      text-decoration: none;
-      padding: 8px;
-      font-weight: 400;
-    }
-  </style>
+  <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="./css/style.css" />
 </head>
 
 <body class="body">
-  <header>
-    <nav>
-      <div>
-        <a href="#" target="_blank" rel="noopener noreferrer"></a>
-        <img src="./imagenes/image1.jpg" alt="Marcello Crescimbeni" width="48" height="48">
+  <header class="header">
+    <nav class="nav">
+      <div class="container elements">
+        <a href="#" target="_blank" rel="noopener noreferrer">
+        <img src="./imagenes/image1.jpg" alt="Marcello Crescimbeni" width="48" height="48" class="nav__logo" />
+        </a>
+        <ul class="menu">
+          <li>
+            <a href="#" class="menu__link">
+              perfil
+            </a>
+          </li>
+          <li>
+            <a href="#" class="menu__link">
+              experiencia
+            </a>
+          </li>
+        </ul>
       </div>
     </nav>
   </header>
-  <h1>Marcello Crescimbeni</h1>
-  <img src="./imagenes/Marce.jpg" alt="Marcello Crescimbeni" style="height: 150px; width: 150px;">
-  <p>Desarrolador Web FrontEnd con la biblioteca React.</p>
-  <p>Para contactar conmigo haz click: <a href="https://www.linkedin.com/in/giosue-marcello-crescimbeni-queija-54a858112/" target="_blank" class="link">AQUÍ</a></p>
+  
 </body>
 
 </html>

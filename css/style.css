@@ -62,11 +62,11 @@
 }
 
 .section--hero {
+    min-height: 100vh;
     display: flex;
     align-items: center;
-    min-height: 100vh;
-    background-image: url("/imagenes/react-galaxia.png");
+    background-image: url('https://i.postimg.cc/7PJV8Dp8/react-01-01-wpo.webp');
     background-position: center;
-    background-size: auto;
-    background-position-x: center;
+    background-size: cover;
+    box-sizing: border-box;
 }

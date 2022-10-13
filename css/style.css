@@ -70,3 +70,27 @@
     background-size: cover;
     box-sizing: border-box;
 }
+
+.card__button {
+    color: brown;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: aqua;
+    border-radius: 5px;
+    font-weight: 100;
+    min-height: 100vh;
+    font-display: flex;
+}
+
+.card {
+    box-shadow: 0 0 0.125rem 0.125rem #ffffff80;
+}
+
+.card__header {}
+
+.card__body {}
+
+.card__subtitle {}
+
+.card__text {}
+
+.card__footer {}

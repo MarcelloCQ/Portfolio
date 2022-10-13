@@ -1,0 +1,9 @@
+:root {
+    --primary-theme-color: rgb(82, 82, 82);
+    --primary-text-color: rgb(247, 160, 160);
+    --primary-highlight-color: #61dafb;
+    --primary-font-family: 'Courier New', Courier, monospace;
+    --reverse-primary-shadow-color: #ffffff80;
+    --reverse-secondary-shadow-color: rgba(44, 35, 35, 0.849);
+    --primary-back-ground-color: rgb(153, 91, 211);
+}

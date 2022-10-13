@@ -4,11 +4,12 @@
 @import '/modules/menu.css';
 @import '/modules/nav.css';
 @import '/modules/buttons.css';
+@import '/modules/variables.css';
 
 .body {
-    background-color: rgb(82, 82, 82);
-    color: rgb(247, 160, 160);
-    font-family: 'Courier New', Courier, monospace;
+    background-color: var(--primary-theme-color);
+    color: var(--primary-text-color);
+    font-family: var(--primary-font-family);
     margin: 0;
 }
 

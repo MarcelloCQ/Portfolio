@@ -1,3 +1,5 @@
+@import '/modules/variables.css';
+
 .elements {
     display: flex;
     align-items: center;

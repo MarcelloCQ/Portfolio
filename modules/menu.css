@@ -1,3 +1,5 @@
+@import '/modules/variables.css';
+
 .menu {
     display: flex;
     gap: 16px;
@@ -7,12 +9,13 @@
 }
 
 .menu__link {
-    color:rgb(247, 160, 160);
+    color: var(--primary-text-color);
     font-weight: 78px;
     text-decoration: none;
     transition: 025ms;
+    font-family: var(--primary-font-family);
 }
 
 .menu__link:hover {
-    color: rgb(153, 91, 211);
+    color: var(--primary-back-ground-color);
 }

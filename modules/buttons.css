@@ -1,13 +1,13 @@
 .card__button {
     display: flex;
-    gap: 1rem;
+    gap: 0.5rem;
 }
 
 .button {
-    background-color: aqua;
+    background-color: var(--primary-highlight-color);
     border: 0.0625rem solid #61dafb;
     border-radius: 0.5rem;
-    color: black;
+    color: var(--secondary-text-color);
     text-decoration: none;
     font-weight: 700;
     font-size: 1rem;
@@ -19,5 +19,10 @@
 @media (min-width: 768px) {
     .button {
         font-size: 1rem;
+    }
+
+    .card__button {
+        display: flex;
+        gap: 1rem;
     }
 }

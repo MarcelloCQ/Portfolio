@@ -9,13 +9,14 @@
 }
 
 .menu__link {
-    color: var(--primary-text-color);
-    font-weight: 78px;
+    color: var(--third-text-color);
+    font-weight: 700;
     text-decoration: none;
     transition: 025ms;
     font-family: var(--primary-font-family);
+    transition: 0.25s, filter 0.25s;
 }
-
 .menu__link:hover {
     color: var(--primary-back-ground-color);
+    filter: brightness(2.125);
 }

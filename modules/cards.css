@@ -1,9 +1,14 @@
-
+@import '/modules/variables.css';
 
 .card {
-    box-shadow: 0 0 0.125rem 0.125rem #ffffff80;
+    box-shadow: 0 0 0.125rem 0.125rem var(--reverse-primary-shadow-color);
     border-radius: 0.5rem;
     overflow: hidden;
+    transition: box-shadow 0.25s;
+}
+
+.card:hover {
+    box-shadow: 0 0 0.125rem 0.125rem var(--reverse-secondary-shadow-color);
 }
 
 .card__header,
@@ -18,16 +23,33 @@
 }
 
 .card__title {
+    font-weight: 600;
     font-size: 1.25rem;
     margin: 0;
 }
 .card__subtitle {
+    font-weight: 400;
     margin: 0;
     font-size: 1rem;
 }
 
 .card__text {
     display: none;
+    font-weight: 200;
+}
+
+.card__button {
+    text-decoration: none;
+    background-color: var(--secondary-text-color);
+    border-radius: 0.25rem;
+    transition: 0.25s, filter 0.25s;
+    margin-left: 10;
+}
+
+.card__button:hover {
+    box-shadow: 0 0 0.125rem 0.125rem;
+    filter: brightness(0.95);
+    color: var(--third-text-color);
 }
 
 @media (min-width: 768px) {

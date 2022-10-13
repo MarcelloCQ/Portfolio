@@ -1,4 +1,4 @@
-@import '/modules/variables.css';
+@import './variables.css';
 
 .header {
     position: fixed;

@@ -1,4 +1,4 @@
-@import '/modules/variables.css';
+@import './variables.css';
 
 .card__button {
     text-decoration: none;

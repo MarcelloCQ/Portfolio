@@ -1,0 +1,53 @@
+.card__button {
+    color: brown;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: aqua;
+    border-radius: 5px;
+    font-display: flex;
+}
+
+.card {
+    box-shadow: 0 0 0.125rem 0.125rem #ffffff80;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.card__header,
+.card__footer {
+    background-color: #00000080;
+    padding: 0.5rem 1rem;
+}
+
+.card__body {
+    background-color: #00000040;
+    padding: 1rem;
+}
+
+.card__title {
+    font-size: 1.25rem;
+    margin: 0;
+}
+.card__subtitle {
+    margin: 0;
+    font-size: 1rem;
+}
+
+.card__text {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .card__title {
+        font-size: 1.5rem;
+    }
+
+    .card__text {
+        display: flex;
+    }
+
+    .card__subtitle {
+        margin: 0;
+        font-size: 1.25rem;
+    }
+
+}

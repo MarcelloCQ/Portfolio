@@ -1,0 +1,12 @@
+.nav {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.nav__logo {
+    display: block;
+    border-radius: 50%;
+    width: 48px;
+    height: 68px;
+    object-fit: cover;
+}

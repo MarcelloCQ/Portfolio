@@ -1,0 +1,18 @@
+.menu {
+    display: flex;
+    gap: 16px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.menu__link {
+    color:rgb(247, 160, 160);
+    font-weight: 78px;
+    text-decoration: none;
+    transition: 025ms;
+}
+
+.menu__link:hover {
+    color: rgb(153, 91, 211);
+}

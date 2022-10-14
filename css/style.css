@@ -6,47 +6,11 @@
 @import './modules/buttons.css';
 @import './modules/variables.css';
 @import './modules/hero.css';
+@import './modules/animations.css';
 
 .body {
     background-color: var(--primary-theme-color);
     color: var(--third-text-color);
     font-family: var(--third-text-color);
     margin: 0;
-}
-
-.container {
-    max-width: 1024px;
-    margin: 0 auto;
-    padding-left: 1rem;
-    padding-right: 1rem;
-}
-
-.section {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-}
-
-
-
-.elements--header-nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-
-
-.section {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-}
-
-@keyframes spin {
-    0% {
-        transform: rotate(0);
-    }
-
-    100% {
-        transform: rotate(360deg);
-    }
 }

@@ -1,21 +1,5 @@
 @import '/css/modules/variables.css';
-
-.section--hero {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    background-image: url('https://i.postimg.cc/7PJV8Dp8/react-01-01-wpo.webp');
-    background-position: center;
-    background-size: cover;
-    box-sizing: border-box;
-}
-
-.elements--hero {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 2rem;
-    justify-items: center;
-}
+@import './animations.css';
 
 .hero-img {
     position: relative;
@@ -23,6 +7,7 @@
 
 .hero-img__img {
     display: flex;
+    background-color: var(--secondary-shadow-color);
     border-radius: 50%;
     width: 256px;
     height: 256px;
@@ -35,13 +20,13 @@
     right: 0;
     bottom: 0;
     margin: 0;
-    animation: spin 5s linear 0s infinite;
+    animation: spin 10s linear 0s infinite;
 }
 
 .hero-img__decorator {
     position: absolute;
-    width: 320;
-    height: 320;
+    width: 64px;
+    height: 64px;
 }
 
 .hero-img__decorator:nth-child(1) {
@@ -59,18 +44,23 @@
 .hero-img__decorator:nth-child(3) {
     top: 50%;
     left: 100%;
-    transform: translate(-50%, -50%) rotate(270deg);
+    transform: translate(-50%, -50%) rotate(-90deg);
 }
 
 .hero-img__decorator:nth-child(4) {
     top: 0%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%) rotate(180deg);
 }
 
 @media (min-width: 768px) {
     .hero-img__img {
         width: 320px;
         height: 320px;
+    }
+    
+    .hero-img__decorator {
+        width: 80px;
+        height: 80px;
     }
 }

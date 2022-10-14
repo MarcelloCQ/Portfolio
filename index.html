@@ -8,20 +8,21 @@
   <title>Marcello Crescimbeni</title>
   <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
   <link rel="stylesheet" href="./css/style.css" />
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
 </head>
 
 <body class="body">
   <header class="header">
     <nav class="nav">
-      <div class="container elements">
+      <div class="container elements elements--header-nav">
         <a href="#" target="_blank" rel="noopener noreferrer">
         <img src="./imagenes/image1.jpg" alt="Marcello Crescimbeni" width="48" height="48" class="nav__logo" />
         </a>
-        <button class="nav__icon" id="navIconMenu">
+        <button class="nav__icon nav__icon--menu" id="navIconMenu">
           <i class="bi bi-list"></i>
         </button>
         <ul class="menu">
@@ -39,40 +40,43 @@
       </div>
     </nav>
   </header>
-  <article class="section section--hero">
-    <div class="container elements--hero">
-      <div class="card">
-        <div class="card__header">
-          <h1 class="card__title">
-            Marcello Crescimbeni
-          </h1>
-        </div>
-        <div class="card__body">
-          <h2 class="card__subtitle">El mejor desarrollador Web FrontEnd en todo el Perú</h2>
-          <p class="card__text">Desarrollador Web FrontEnd con la librería React</p>
-          <p class="card__text">
-            Puedes enviarme un mensaje por whatsapp haciendo click 
-            <a href="https://wa.link/a7madb" class="card__button" target="_blank"> AQUÍ </a>
-          </p>
-        </div>
-        <div class="card__footer">
-          <div class="buttons">
-            <a href="https://drive.google.com/file/d/1pL_TZyUK8rTICV1vptf71BCVR61FapFV/view?usp=sharing" target="_blank" class="button">CV</a>
-            <a href="https://github.com/MarcelloCQ" target="_blank" class="button">GitHub</a>
+  <main>
+    <article class="section section--hero">
+      <div class="container elements elements--hero">
+        <div class="card">
+          <div class="card__header">
+            <h1 class="card__title">
+              Marcello Crescimbeni
+            </h1>
+          </div>
+          <div class="card__body">
+            <h2 class="card__subtitle">El mejor desarrollador Web FrontEnd en todo el Perú</h2>
+            <p class="card__text">Desarrollador Web FrontEnd con la librería React</p>
+            <p class="card__text">
+              Puedes enviarme un mensaje por whatsapp haciendo click 
+              <a href="https://wa.link/a7madb" class="card__button" target="_blank"> AQUÍ </a>
+            </p>
+          </div>
+          <div class="card__footer">
+            <div class="buttons">
+              <a href="https://drive.google.com/file/d/1pL_TZyUK8rTICV1vptf71BCVR61FapFV/view?usp=sharing" target="_blank" class="button">CV</a>
+              <a href="https://github.com/MarcelloCQ" target="_blank" class="button">GitHub</a>
+            </div>
           </div>
         </div>
+        <div class="hero-img">
+          <img src="/imagenes/JOJOPOSE.jpg" alt="MarcelloJojoPose" class="hero-img__img" />
+          <figure class=""hero-img__decorators>
+            <img src="/iconos/logo-html-5.svg" alt="htmlIcon" height="64" width="64" class="hero-img__decorator" />
+            <img src="/iconos/logo-css-3.svg" alt="cssIcon" height="64" width="64" class="hero-img__decorator" />
+            <img src="/iconos/logo-javascript.svg" alt="javaIcon" height="64" width="64" class="hero-img__decorator" />
+            <img src="/iconos/logo-react.svg" alt="reactIcon" height="64" width="64" class="hero-img__decorator" />
+          </figure>
+        </div>
       </div>
-      <div class="hero-img">
-        <img src="/imagenes/JOJOPOSE.jpg" alt="MarcelloJojoPose" class="hero-img__img" />
-        <figure class=""hero-img__decorators>
-          <img src="/iconos/logo-html-5.svg" alt="htmlIcon" height="64" width="64" class="hero-img__decorator" />
-          <img src="/iconos/logo-css-3.svg" alt="cssIcon" height="64" width="64" class="hero-img__decorator" />
-          <img src="/iconos/logo-javascript.svg" alt="javaIcon" height="64" width="64" class="hero-img__decorator" />
-          <img src="/iconos/logo-react.svg" alt="reactIcon" height="64" width="64" class="hero-img__decorator" />
-        </figure>
-      </div>
-    </div>
-  </article>
+    </article>
+  </main>
+
   <script src="./js/script.js"></script>
 </body>
 

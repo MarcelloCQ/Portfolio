@@ -1,7 +1,49 @@
 @import './variables.css';
 
-.elements {
+.container {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.elements--header-nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.elements--hero {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+.section {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.section--hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-image: url('https://i.postimg.cc/7PJV8Dp8/react-01-01-wpo.webp');
+    background-position: center;
+    background-size: cover;
+    box-sizing: border-box;
+}
+
+/*.elements {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+} */
+
+@media (min-width: 768px) {
+    .elements--hero {
+        grid-template-columns: 1fr 1fr;
+    }
 }

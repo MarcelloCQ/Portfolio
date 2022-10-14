@@ -1,21 +1,9 @@
 @import './variables.css';
 
-.card__button {
-    text-decoration: none;
-    background-color: var(--secondary-text-color);
-    border-radius: 0.25rem;
-    transition: 0.25s, filter 0.25s;
-    margin: 0px 0px 0px 5px;
+.buttons {
     display: flex;
     gap: 0.5rem;
-    color: var(--third-text-color);
-    
-}
-
-.card__button:hover {
-    box-shadow: 0 0 0.125rem 0.125rem;
-    filter: brightness(0.95);
-    color: var(--third-text-color);
+    flex-wrap: wrap;
 }
 
 .button {
@@ -37,13 +25,33 @@
     filter: brightness(2.125);
 }
 
-@media (min-width: 768px) {
-    .button {
-        font-size: 1rem;
-    }
+.card__button {
+    text-decoration: none;
+    background-color: var(--secondary-text-color);
+    border-radius: 0.25rem;
+    transition: 0.25s, filter 0.25s;
+    margin: 0px 0px 0px 5px;
+    display: flex;
+    gap: 0.5rem;
+    color: var(--third-text-color);
+    
+}
 
-    .card__button {
+.card__button:hover {
+    box-shadow: 0 0 0.125rem 0.125rem;
+    filter: brightness(0.95);
+    color: var(--third-text-color);
+}
+
+
+
+@media (min-width: 768px) {
+    .buttons {
         display: flex;
         gap: 1rem;
+    }
+
+    .button {
+        font-size: 1rem;
     }
 }

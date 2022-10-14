@@ -25,7 +25,7 @@
     filter: brightness(2.125);
 }
 
-.card__button {
+/*.card__button {
     text-decoration: none;
     background-color: var(--secondary-text-color);
     border-radius: 0.25rem;
@@ -34,14 +34,25 @@
     display: flex;
     gap: 0.5rem;
     color: var(--third-text-color);
-    
+}
+
+.card__button1 {
+    text-decoration: none;
+    background-color: var(--secondary-text-color);
+    border-radius: 0.25rem;
+    transition: 0.25s, filter 0.25s;
+    margin: 10px 5px 5px 5px;
+    display: flex;
+    gap: 0.5rem;
+    color: var(--third-text-color);
+    text-align: center;
 }
 
 .card__button:hover {
     box-shadow: 0 0 0.125rem 0.125rem;
     filter: brightness(0.95);
     color: var(--third-text-color);
-}
+}*/
 
 
 

@@ -1,12 +1,12 @@
-@import './modules/cards.css';
-@import './modules/header.css';
-@import './modules/layout.css';
-@import './modules/menu.css';
-@import './modules/nav.css';
-@import './modules/buttons.css';
-@import './modules/variables.css';
-@import './modules/hero.css';
 @import './modules/animations.css';
+@import './modules/variables.css';
+@import './modules/layout.css';
+@import './modules/header.css';
+@import './modules/nav.css';
+@import './modules/menu.css';
+@import './modules/cards.css';
+@import './modules/buttons.css';
+@import './modules/hero.css';
 
 .body {
     background-color: var(--primary-theme-color);

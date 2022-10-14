@@ -5,6 +5,7 @@
 @import './modules/nav.css';
 @import './modules/buttons.css';
 @import './modules/variables.css';
+@import './modules/hero.css';
 
 .body {
     background-color: var(--primary-theme-color);
@@ -25,13 +26,27 @@
     padding-bottom: 2rem;
 }
 
-.section--hero {
-    min-height: 100vh;
+
+
+.elements--header-nav {
     display: flex;
     align-items: center;
-    background-image: url('https://i.postimg.cc/7PJV8Dp8/react-01-01-wpo.webp');
-    background-position: center;
-    background-size: cover;
-    box-sizing: border-box;
+    justify-content: space-between;
 }
 
+
+
+.section {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}

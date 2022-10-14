@@ -1,0 +1,76 @@
+@import '/css/modules/variables.css';
+
+.section--hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-image: url('https://i.postimg.cc/7PJV8Dp8/react-01-01-wpo.webp');
+    background-position: center;
+    background-size: cover;
+    box-sizing: border-box;
+}
+
+.elements--hero {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    justify-items: center;
+}
+
+.hero-img {
+    position: relative;
+}
+
+.hero-img__img {
+    display: flex;
+    border-radius: 50%;
+    width: 256px;
+    height: 256px;
+}
+
+.hero-img__decorators {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0;
+    animation: spin 5s linear 0s infinite;
+}
+
+.hero-img__decorator {
+    position: absolute;
+    width: 320;
+    height: 320;
+}
+
+.hero-img__decorator:nth-child(1) {
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%); rotate: (0deg);
+}
+
+.hero-img__decorator:nth-child(2) {
+    top: 50%;
+    left: 0%;
+    transform: translate(-50%, -50%) rotate(90deg);
+}
+
+.hero-img__decorator:nth-child(3) {
+    top: 50%;
+    left: 100%;
+    transform: translate(-50%, -50%) rotate(270deg);
+}
+
+.hero-img__decorator:nth-child(4) {
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@media (min-width: 768px) {
+    .hero-img__img {
+        width: 320px;
+        height: 320px;
+    }
+}

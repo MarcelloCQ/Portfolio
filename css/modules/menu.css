@@ -3,20 +3,22 @@
 
 .menu {
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 2rem;
     margin: 0;
     padding: 0;
     list-style: none;
-    
-    background-color: rgb(28, 26, 26);
+}
+
+.menu--header {
+    flex-direction: column;
     position: fixed;
-    top: 5rem;
+    top: 0;
     left: 0;
     width: 100%;
     height: 100%;
+    background-color: var(--primary-theme-color);
     transform: translateX(var(--translate-x-menu));
     transition: transform 0.25s;
 }
@@ -31,4 +33,13 @@
 .menu__link:hover {
     color: var(--primary-back-ground-color);
     filter: brightness(2.125);
+}
+
+@media (min-width: 768px) {
+    .menu--header {
+        flex-direction: row;
+        background-color: transparent;
+        position: static;
+        width: auto;
+    }
 }

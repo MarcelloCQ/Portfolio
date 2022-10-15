@@ -1,6 +1,33 @@
-const menu = document.getElementById('navIconMenu');
-const nav = document.querySelector('.nav');
+const navIconMenu = document.getElementById('navIconMenu');
+const navIconClose = document.querySelector('#navIconClose');
+const nav = document.querySelector('.nav')
 
-menu.addEventListener('click', () => {
-    nav.classList.toggle('nav--open')
+navIconMenu.addEventListener('click', () => {
+    nav.classList.add('nav--open')
 })
+
+navIconClose.addEventListener('click', () => {
+    nav.classList.remove('nav--open')
+})
+
+    const swiper = new Swiper('.swiper', {
+    // Optional parameters
+    direction: 'vertical',
+    loop: true,
+
+    // If we need pagination
+    pagination: {
+        el: '.swiper-pagination',
+    },
+
+    // Navigation arrows
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+
+    // And if we need scrollbar
+    scrollbar: {
+        el: '.swiper-scrollbar',
+    },
+    });

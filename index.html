@@ -12,6 +12,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
 </head>
 
 <body class="body">
@@ -24,18 +25,21 @@
         <button class="nav__icon nav__icon--menu" id="navIconMenu">
           <i class="bi bi-list"></i>
         </button>
-        <ul class="menu">
-          <li>
+        <ul class="menu menu--header">
+          <li>            
             <a href="#" class="menu__link">Perfil</a>
           </li>
           <li>
             <a href="#" class="menu__link">Experiencia</a>
           </li>
         </ul>
+        <button class="nav__icon nav__icon--close" id="navIconClose">
+          <i class="bi bi-x-circle-fill"></i>
+        </button>
       </div>
     </nav>
   </header>
-  <main>
+  <main class="main">
     <article class="section section--hero">
       <div class="container elements elements--hero">
         <div class="card">
@@ -70,8 +74,35 @@
         </div>
       </div>
     </article>
+
+    <div class="container">
+        <!-- Slider main container -->
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide"></div>
+            <img src="./assets/img/Marce.jpg" alt="gatitoenojado" height="100%" width="100%" class="swiper__img" />
+          <div class="swiper-slide"></div>
+            <img src="./assets/img/descarga.jpg" alt="gatitoenojado" height="100%" width="100%" class="swiper__img" />
+          <div class="swiper-slide"></div>
+          <img src="./assets/img/descarga1.jpg" alt="gatitoenojado" height="50%" width="10
+          0%" class="swiper__img" />
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
+      </div>
+    </div>
   </main>
 
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   <script src="./js/script.js"></script>
 </body>
 

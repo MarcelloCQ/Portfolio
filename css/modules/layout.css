@@ -36,6 +36,30 @@
     box-sizing: border-box;
 }
 
+.section--hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: var(--secondary-shadow-color);
+    pointer-events: none;
+}
+
+.section--hero::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 10rem;
+    background-image: linear-gradient(var(--secondary-shadow-color));
+    pointer-events: none;
+}
+
 /*.elements {
     display: flex;
     align-items: center;

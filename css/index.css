@@ -7,6 +7,7 @@
 @import './modules/cards.css';
 @import './modules/buttons.css';
 @import './modules/hero.css';
+@import './modules/swiper.css';
 
 .body {
     background-color: var(--primary-theme-color);
@@ -14,3 +15,8 @@
     font-family: var(--third-text-color);
     margin: 0;
 }
+
+.main {
+    overflow: hidden;
+}
+

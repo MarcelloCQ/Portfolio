@@ -8,6 +8,12 @@
     --translate-x-menu: 0;
 }
 
+.nav__icon--close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
 .nav__logo {
     display: block;
     border-radius: 50%;
@@ -30,4 +36,11 @@
 
 .nav__icon:hover {
     filter: contrast(1);
+}
+
+@media (min-width: 768px) {
+    .nav__icon--menu,
+    .nav__icon--close {
+        display: none;
+    }
 }
